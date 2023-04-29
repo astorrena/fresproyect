@@ -19,20 +19,47 @@ main{
     background: var(--liht-grey);
     width: 100%;
 }
+.hero{
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 40px;
+}
+.hero-title{
+    font-size: 40px;
+    max-width: 50%;
+}
 .post-archive{
     max-width: 1200px;
     margin: auto;
     display: grid;
     padding: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    grid-gap: 24px;
 }
 .post-card{
     background: white;
-    max-width: 350px;
     min-height: 350px;
     padding: 32px;
     border-radius: 32px;
-    border: solid 2px var(--dark-green)
+    border: solid 2px var(--dark-green);
+    transition: transform .5s, box-shadow .5s;
+    cursor: pointer;
+}
+.post-card:hover {
+    transform: rotate(5deg);
+    box-shadow: 4px 4px var(--dark-green);
 }
 .post-categories{
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 8px;
+
+}
+.post-category{
+    border-radius: 32px;
+    border: solid 2px var(--dark-green);
+    padding: 4px 12px;
+}
+.arrow {
+    width: 16px;
+    height: 16px;
 }

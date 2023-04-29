@@ -43,6 +43,9 @@ main{
     border: solid 2px var(--dark-green);
     transition: transform .5s, box-shadow .5s;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .post-card:hover {
     transform: rotate(5deg);
@@ -59,7 +62,45 @@ main{
     border: solid 2px var(--dark-green);
     padding: 4px 12px;
 }
+
+.card-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
 .arrow {
-    width: 16px;
-    height: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 32px;
+    border: solid 2px var(--dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+.long-arrow-right{
+  /* display: block;
+  margin: 30px auto; */
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  
+}
+.long-arrow-right{
+ transform: rotate(135deg);
+}
+.long-arrow-right::after{
+  content: "";
+  display: block;
+  width: 2px;
+  border-radius: 32px;
+  height: 24px;
+  background-color: black;
+  transform: rotate(-45deg) translate(8px, 3px);
+  left: 0;
+  top: 0;
 }

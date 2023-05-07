@@ -52,10 +52,11 @@ header{
     padding: 20px 40px;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 .hero-title{
-    font-size: 40px;
-    padding-top: 40px;
+    font-size: 32px;
+    padding-top: 10px;
 }
 .hero-search-bar{
     background: white;
@@ -70,7 +71,7 @@ header{
     padding: 16px 20px;
 }
 .hero > img{
-    max-width: 400px;
+    max-width: 240px;
     width: 100%;
 }
 .post-archive{
@@ -168,8 +169,16 @@ footer{
         gap: 40px;
         justify-content: space-between;
         flex-direction: row;
+        align-items: flex-start;
     }
     .hero-search-bar{
         width: 400px;
+    }
+    .hero > img{
+        max-width: 400px;
+    }
+    .hero-title{
+        font-size: 40px;
+        padding-top: 40px;
     }
 }
